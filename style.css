@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./font/Montserrat/Montserrat-SemiBold.ttf");
+}
+nav ul {
+  display: flex;
+  color: #454545;
+  background-color: rgb(255, 255, 255);
+}
+
+nav a:link,
+nav a:visited {
+  color: #777777ce;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+nav a:hover {
+  font-size: 16px;
+  text-shadow: 1px 1px 5px rgb(209, 209, 209);
+  color: #454545;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #27f6fd;
+  font-size: 102%;
+}
+
+p a:link,
+p a:visited {
+  color: #00bdc4;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+p a:hover {
+  text-shadow: 1px 1px 5px rgb(207, 207, 207, 0.9);
+  text-decoration: underline;
+}
+
+.actualPage {
+  color: #525252;
+}
+
+nav {
+  box-shadow: 0.2px 1px 5px grey;
+}
+
+/* Page d'accueil */
+
+#indexHeader {
+  height: 700px;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(224, 255, 51, 0.2),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(./img/lodging_exterior/headerImg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #454545;
+}
+
+.top {
+  height: 100%;
+}
+
+.lmcHeader {
+  height: 80%;
+  color: rgb(74, 180, 230);
+  text-shadow: 1px 1px 10px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lmcHeaderText {
+  transition: 0.5s;
+  text-align: center;
+  cursor: default;
+}
+
+.lmcHeaderText:hover {
+  font-size: 102%;
+  color: rgb(96, 192, 236);
+  text-shadow: 1px 1px 15px black;
+}
+
+#logoLMC {
+  font-family: "Franklin Gothic Medium";
+  font-size: 35px;
+  margin-right: 15px;
+  color: rgb(5, 211, 211);
+  text-shadow: 1px 2px 2px #454545;
+  transition: 1s;
+  cursor: default;
+}
+
+#logoLMC:hover {
+  color: rgb(0, 142, 224);
+  transform: rotate(-5deg);
+  font-size: 40px;
+}
+
+nav li {
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.bottomSection {
+  background-color: white;
+  box-shadow: -0.2px -1px 5px #454545;
+  display: flex;
+  height: auto;
+  min-height: 70vh;
+  max-height: 95vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.ownerPicture {
+  width: 30%;
+  margin: 30px 10px 15px 0px;
+  padding: 10px;
+  min-width: 20vh;
+  max-width: 800px;
+  box-shadow: 2px 2px 5px #525252;
+}
+
+.contact {
+  width: 10%;
+  margin-left: 10px;
+  margin-right: 25px;
+  max-width: 300px;
+}
+
+#whoAmI {
+  margin: 30px;
+  margin-right: 10px;
+  width: 60%;
+  max-height: 800px;
+  height: 100%;
+}
+
+#whoAmI h2 {
+  font-size: 80px;
+  margin-bottom: 40px;
+  font-family: "Franklin Gothic Medium";
+  color: #27f6fd;
+  text-shadow: 1px 1px 5px #454545;
+  text-align: center;
+}
+
+#whoAmI p {
+  font-family: "Segoe UI";
+  font-size: 20px;
+  color: #454545;
+  margin: 13px 30px 13px 30px;
+  padding: 0px 60px 0px 60px;
+  text-align: center;
+}
+
+.whoAmIText {
+  text-align: center;
+}
+
+.contact {
+  color: #494949;
+}
+
+.contact a {
+  color: #494949;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.contact a:hover {
+  color: #007a99;
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.phone li {
+  margin-right: 10px;
+}
+
+.email {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.email li {
+  margin-right: 10px;
+}
+
+/* FIN PAGE ACCUEIL */
+
+/* Page - Logements */
+
+#lodgingHeader {
+  height: 75vh;
+  width: auto;
+  background-image: linear-gradient(
+      rgba(224, 255, 51, 0.288),
+      rgba(0, 115, 160, 0.1)
+    ),
+    url(./img/lodging_exterior/lodgingHeaderImg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #454545;
+}
+
+.lmcLodgingHeader {
+  font-size: 150%;
+  height: 80%;
+  color: rgb(74, 208, 241);
+  text-shadow: 2px 2px 10px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 5px grey;
+  margin-bottom: 0px;
+  padding-bottom: 27px;
+}
+
+.lmcLodgingHeaderText {
+  transition: 0.5s;
+  text-align: center;
+  cursor: default;
+}
+
+.lmcLodgingHeaderText:hover {
+  font-size: 120%;
+  color: rgb(133, 215, 253);
+  text-shadow: 1px 1px 15px black;
+}
+
+.lodgingBottomSection {
+  background-color: white;
+  box-shadow: -0.2px -1px 5px #454545;
+  display: flex;
+  height: auto;
+  min-height: 70vh;
+  max-height: 95vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.discoverLodging p {
+  font-family: "Segoe UI";
+  font-size: 25px;
+  color: #454545;
+  margin: 0px;
+  margin-top: 0px;
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+}
+
+.discoverLodging {
+  height: 23.5vh;
+  padding-bottom: 10px;
+  box-shadow: 1px 1px 5px #454545;
+  background-color: #11bebe09;
+}
+
+.differentFont {
+  font-family: "Montserrat";
+  color: #007a99;
+  cursor: default;
+}
+
+.lodgingPictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px;
+}
+
+.leftPicture {
+  box-shadow: 1px 0px 5px #454545;
+  max-height: 300px;
+}
+
+.rightText,
+.leftText {
+  margin: 30px;
+  text-align: center;
+}
+
+.rightText h2 {
+  font-size: 80px;
+  margin: 0px 10px 20px 150px;
+  font-family: "Franklin Gothic Medium";
+  color: #41ff80;
+  text-shadow: 1px 1px 5px #454545;
+  transition: 0.7s;
+}
+
+.rightText h2:hover {
+  color: #21fa69;
+  font-size: 95px;
+}
+
+#rightTextLodgingF {
+  color: #ff89a2;
+  transition: 0.5s;
+}
+
+#rightTextLodgingF:hover {
+  color: #ff6889;
+  font-size: 88px;
+}
+
+.rightText p {
+  font-family: "Segoe UI";
+  font-size: 20px;
+  color: #454545;
+  margin: 0px 10px 20px 150px;
+  text-align: center;
+}
+
+.rightPicture {
+  box-shadow: 1px 0px 5px #454545;
+  max-height: 300px;
+  margin-left: 150px;
+}
+
+.leftText h2 {
+  font-size: 80px;
+  margin: 0px 10px 20px 150px;
+  font-family: "Franklin Gothic Medium";
+  color: #ffec41;
+  text-shadow: 1px 1px 5px #454545;
+  transition: 0.8s;
+}
+
+.leftText h2:hover {
+  color: #ffe91f;
+  font-size: 90px;
+}
+
+.leftText p {
+  font-family: "Segoe UI";
+  font-size: 20px;
+  color: #454545;
+  margin: 0px 10px 20px 150px;
+  text-align: center;
+}
+
+/* FIN PAGE LOGEMENTS */
+
+/* Page - Contact */
+
+#contactHeader {
+  height: 50vh;
+  width: auto;
+  background-image: linear-gradient(
+      rgba(224, 255, 51, 0.288),
+      rgba(0, 115, 160, 0.1)
+    ),
+    url(./img/lodging_exterior/contactHeaderImg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #454545;
+}
+
+.howToContactMe h2 {
+  font-size: 50px;
+  margin-bottom: 40px;
+  font-family: "Franklin Gothic Medium";
+  color: #27f6fd;
+  text-shadow: 1px 1px 3px #454545;
+  text-align: center;
+}
+
+.lmcContactHeader {
+  font-size: 150%;
+  height: 80%;
+  color: rgb(74, 208, 241);
+  text-shadow: 2px 2px 10px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.2px 1px 5px grey;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.lmcContactHeaderText {
+  transition: 0.5s;
+  text-align: center;
+  cursor: default;
+}
+
+.lmcContactHeaderText:hover {
+  font-size: 120%;
+  color: rgb(133, 215, 253);
+  text-shadow: 1px 1px 15px black;
+}
+
+#contactBottomSection {
+  margin-top: 3vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: 45vh;
+  max-height: 50vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.contactBox {
+  font-size: 125%;
+  background-color: #2222220e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 10px #454545;
+  height: 200px;
+  width: 400px;
+  color: #494949;
+}
+
+.contactBox a {
+  color: #494949;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.contactBox a:hover {
+  color: #007a99;
+  text-decoration: underline;
+}
+
+#whenToContactMe {
+  margin-top: 10px;
+  font-size: 70%;
+}
+#whenToContactMe a {
+  color: #686868;
+  transition: 0.2s;
+}
+
+#whenToContactMe a:hover {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+/* FIN PAGE CONTACT */
