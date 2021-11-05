@@ -26,4 +26,4 @@ Le site est séparé en trois parties :
 ## Crédits :
 
   - Le site a été réalisé par Romain C. de A à Z, seulement avec l'aide de ses cours et d'internet.
-  - L'entreprise LMC est une entreprise détenue par Richard CORNUAULT et la reproduction du site n'est alors pas permise, sauf sous permission de sa part.
+  - © L'entreprise LMC est une entreprise détenue par Richard CORNUAULT et la reproduction du site n'est alors pas permise, sauf sous permission de sa part.
