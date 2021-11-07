@@ -56,7 +56,7 @@ nav {
   box-shadow: 0.2px 1px 5px grey;
 }
 
-/* Page d'accueil */
+/* Home Page */
 
 #indexHeader {
   height: 700px;
@@ -222,9 +222,9 @@ ul {
   margin-right: 10px;
 }
 
-/* FIN PAGE ACCUEIL */
+/* END OF HOME PAGE*/
 
-/* Page - Logements */
+/* LODGING */
 
 #lodgingHeader {
   height: 75vh;
@@ -379,9 +379,9 @@ ul {
   text-align: center;
 }
 
-/* FIN PAGE LOGEMENTS */
+/* END OF LODGING */
 
-/* Page - Contact */
+/* CONTACT */
 
 #contactHeader {
   height: 50vh;
@@ -484,4 +484,4 @@ ul {
   text-decoration: none;
 }
 
-/* FIN PAGE CONTACT */
+/* END OF CONTACT */
